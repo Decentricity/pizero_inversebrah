@@ -56,8 +56,17 @@ grammar = {
 while True:
     # Generate inversebrah notifs
     smoltingsummon = expand_phrase(grammar, "#origin#")
-    # print(smoltingsummon)  # writeout get me in lil shid
-    keyboard_layout.write(smoltingsummon + "\n")
+    
+    # Write 'n' before the generated text ("new post" keyboard shortcut on Twitter)
+    keyboard_layout.write('n')
+
+    # Write the generated text
+    keyboard_layout.write(smoltingsummon)
+
+    # Send 'Ctrl-Enter' after the generated text (post!)
+    keyboard.press(Keycode.CONTROL)
+    keyboard.press(Keycode.ENTER)
+    keyboard.release_all()
     
     # Let's not overwhelm the computer, shall we?
-    time.sleep(0.5)
+    time.sleep(2come in l)
