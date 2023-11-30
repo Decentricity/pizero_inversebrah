@@ -59,6 +59,7 @@ while True:
     
     # Write 'n' before the generated text ("new post" keyboard shortcut on Twitter)
     keyboard_layout.write('n')
+    time.sleep(1)
 
     # Write the generated text
     keyboard_layout.write(smoltingsummon)
@@ -69,4 +70,4 @@ while True:
     keyboard.release_all()
     
     # Let's not overwhelm the computer, shall we?
-    time.sleep(2come in l)
+    time.sleep(2)
