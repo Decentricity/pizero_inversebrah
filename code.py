@@ -52,7 +52,6 @@ grammar = {
     "salamander" : ["salamander","frok","platypus","cucumber","pickle"],
     "aw" : ["aw","lmwo","lmeow","iwo","jfw" ""]
 }
-
 # Wait for BOOTSEL button press to start
 while not rp2.bootsel_button():
     pass  # Do nothing, just wait
@@ -63,7 +62,7 @@ while True:
     
     # Write 'n' before the generated text ("new post" keyboard shortcut on Twitter)
     keyboard_layout.write('n')
-    time.sleep(1)
+    time.sleep(0.5)
 
     # Write the generated text
     keyboard_layout.write(smoltingsummon)
