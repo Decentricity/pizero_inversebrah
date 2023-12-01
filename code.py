@@ -53,6 +53,10 @@ grammar = {
     "aw" : ["aw","lmwo","lmeow","iwo","jfw" ""]
 }
 
+# Wait for BOOTSEL button press to start
+while not rp2.bootsel_button():
+    pass  # Do nothing, just wait
+    
 while True:
     # Generate inversebrah notifs
     smoltingsummon = expand_phrase(grammar, "#origin#")
